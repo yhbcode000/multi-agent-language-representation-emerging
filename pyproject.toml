@@ -5,6 +5,11 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "app",
+    "flask-cors>=5.0.0",
     "jupyter>=1.1.1",
     "openai>=1.51.2",
 ]
+
+[tool.uv.sources]
+app = { path = "backend", editable = true }
